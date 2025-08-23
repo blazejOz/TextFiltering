@@ -1,6 +1,6 @@
 #include "CensorFilter.h"
 
-std::string CensorFilter::apply(const std::string& in) 
+std::string CensorFilter::apply(const std::string& in) const
 {
     std::string out = in;
     for (const auto& w : filtered_words) {
