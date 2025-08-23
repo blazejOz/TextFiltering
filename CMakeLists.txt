@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(text_filtering
     src/CensorFilter.cpp
+    src/UppercaseFilter.cpp
 )
 target_include_directories(text_filtering PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
@@ -25,6 +26,7 @@ enable_testing()
 add_executable(
   text_filtering_test
   tests/censorship_tests.cpp
+  tests/uppercase_tests.cpp
 )
 target_link_libraries(
   text_filtering_test
