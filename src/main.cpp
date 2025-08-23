@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
         {
             transformed = f->apply(transformed);
         }
-        std::cout<<"Original input: "<<transformed<<" Transformed to: " <<transformed<<std::endl;
+        std::cout<<"Original input: "<<transformed<<" Got transformed to: " <<transformed<<std::endl;
     }
     return 0;
 }
